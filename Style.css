@@ -79,8 +79,10 @@ footer {
 #skills{
      background-color: #84D2F6;
      color: #f0f0f0;
-     text-align: center;
      padding: 500px;
+}
+#skills li{
+    text-align: center;
 }
 /* section{     background-color: #3E78B2;
     color: aliceblue;
