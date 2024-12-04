@@ -40,6 +40,7 @@ nav ul li a {
 .hero {
     text-align: center;
     margin-top: 50px;
+    padding: 200px;
 }
 
 .profile-image {
@@ -68,7 +69,7 @@ footer {
 #about{
     background-color: #59A5D8;
     color: azure;
-    padding: 500px;
+    padding: 250px;
 }
 #about h3{
     text-align: center;
@@ -77,12 +78,12 @@ footer {
     text-align: justify;
 }
 #skills{
-     background-color: #84D2F6;
+     background-color: #386FA4;
      color: #f0f0f0;
-     padding: 500px;
+     padding: 250px;
 }
-#skills li{
-    text-align: center;
+#skills ul{
+    text-align: justify;
 }
 /* section{     background-color: #3E78B2;
     color: aliceblue;
