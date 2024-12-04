@@ -65,6 +65,21 @@ footer {
     text-align: center;
     padding: 20px;
 }
+#about{
+    background-color: #59A5D8;
+    color: azure;
+}
+#about h3{
+    text-align: center;
+}
+#about p{
+    text-align: justify;
+}
+#skills{
+     background-color: #84D2F6;
+     color: #f0f0f0;
+     text-align: center;
+}
 /* section{     background-color: #3E78B2;
     color: aliceblue;
 }*/
