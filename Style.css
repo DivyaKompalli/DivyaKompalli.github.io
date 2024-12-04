@@ -58,31 +58,10 @@ p {
     margin: 20px 0;
 }
 
-.download-cv {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #6200ea;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
+
 
 footer {
     text-align: center;
     padding: 20px;
 }
 
-.social-media {
-    list-style: none;
-    padding: 0;
-}
-
-.social-media li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.social-media a {
-    text-decoration: none;
-    color: #6200ea;
-}
