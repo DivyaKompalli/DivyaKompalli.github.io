@@ -6,18 +6,16 @@ body {
   color: #000f08; /* Dark Green */
 }
 
-nav {
+header {
   background-color: #1c3738; /* Teal */
-  padding: 10px 0;
+  padding: 20px;
   text-align: center;
 }
 
-nav .logo {
+header .logo {
   color: #f4fff8; /* Light Cream */
   font-size: 24px;
   font-weight: bold;
-  display: inline-block;
-  margin-right: 20px;
 }
 
 nav a {
@@ -30,6 +28,14 @@ nav a {
 nav a:hover {
   background-color: #4d4847; /* Dark Gray */
   transition: background-color 0.3s; /* Added transition */
+}
+
+.hero {
+  background-image: url("hi.jpg"); /* Use the available image */
+  color: #ffffff; /* White text for contrast */
+  padding: 100px 20px;
+  text-align: center;
+  background-repeat: no-repeat;
 }
 
 section {
