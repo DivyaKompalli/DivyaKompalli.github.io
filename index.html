@@ -3,73 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sri Divya Muktha's Portfolio</title>
-    <link rel="stylesheet" href="Style.css" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <div class="logo">My Portfolio</div>
       <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <h1>My Portfolio</h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
-    <section class="hero">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Hi, I'm Sri Divya Muktha, a passionate web developer.</p>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <img src="me.jpg" alt="Profile Picture" class="profile-pic" />
+        <div class="text-container">
+          <div class="scrolling-text">
+            <p class="fade">Welcome to My Portfolio</p>
+            <p class="fade">
+              Hi, I’m Kompalli Sri Divya Muktha, a Passionate Developer!
+            </p>
+            <p class="fade">Let’s build something amazing together!</p>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
       <p>
-        I am a student passionate about building interactive and user-friendly
-        websites. I have experience in front-end technologies like HTML, CSS,
-        and JavaScript.
+        Kompalli Sri Divya Muktha is a third-year Information Technology student
+        at Gokaraju Rangaraju Institute of Engineering and Technology (GRIET).
+        She is passionate about full-stack development, with hands-on experience
+        in both front-end and back-end technologies, including HTML, CSS,
+        JavaScript, and database management, alongside strong proficiency in
+        Java, Python, and C. Her expertise spans across creating dynamic web
+        applications, developing user-friendly interfaces, and working with
+        server-side frameworks. Sri Divya has also completed internships in AI
+        and IoT, sharpening her skills in cloud computing and machine learning.
+        Actively engaged in competitive programming, she continuously hones her
+        problem-solving and algorithmic skills on platforms such as CodeChef,
+        Codeforces, and LeetCode.
       </p>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-      </ul>
-    </section>
-
+    <!-- Projects Section -->
     <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project-card">
-        <strong>Project 1:</strong> <a href="#">Portfolio Website</a>
-      </div>
-      <div class="project-card">
-        <strong>Project 2:</strong>
-        <a href="https://DivyaKompalli.github.io/Online-Store/"
-          >E-commerce Website</a
+      <h2 style="font-size: 50px">My Projects</h2>
+      <div class="project">
+        <img src="online.png" alt="Project 1" />
+        <a
+          href="https://DivyaKompalli.github.io/Online-Store/"
+          style="color: #1c3738; text-decoration: none"
+          width="300px"
+          height="300px"
+          ><h3>Project 1</h3></a
         >
+        <p>
+          The Online Store project is a dynamic web application designed to
+          provide users with a seamless e-commerce experience. It features a
+          user-friendly interface for browsing and purchasing products, with
+          secure payment integration and personalized recommendations. The
+          back-end is powered by a robust database system, ensuring smooth order
+          management and inventory tracking. This project leverages full-stack
+          development, combining front-end technologies like HTML, CSS, and
+          JavaScript with back-end functionalities built using server-side
+          frameworks and databases.
+        </p>
+      </div>
+      <div class="project">
+        <img src="port.png" width="1300px" height="700px" alt="Project 2" />
+        <a href="#" style="color: #1c3738; text-decoration: none"
+          ><h3>Project 2</h3></a
+        >
+        <p>
+          This portfolio website showcases the skills, projects, and
+          achievements of Kompalli Sri Divya Muktha, featuring a clean and
+          user-friendly design. It highlights her expertise in full-stack
+          development, machine learning, and competitive programming, with a
+          focus on projects demonstrating her technical capabilities and
+          problem-solving skills.
+        </p>
+      </div>
+      <!-- <div class="project">
+        <img src="https://via.placeholder.com/300x200" alt="Project 3" />
+        <h3>Project 3</h3>
+        <p>Short description of the project...</p>
+      </div> -->
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Java</span>
+        <span class="skill">Python</span>
+        <span class="skill">AWS</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Node</span>
+        <span class="skill">MongoDb</span>
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
       <h2>Contact Me</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <p>
+        Email:
+        <a href="mailto:sridivyakompalli@gmail.com">your-email@example.com</a>
+      </p>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/sridivyamukthakompalli1229"
+          >View My Profile</a
+        >
+      </p>
     </section>
 
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Sri Divya Muktha. All rights reserved.</p>
+      <p>© 2025 Sri Divya Muktha. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
