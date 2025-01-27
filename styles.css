@@ -66,7 +66,7 @@ header ul li a:hover {
 }
 
 #hero h1 {
-  font-size: 50px; /* Increased font size for main heading */
+  font-size: 20px; /* Increased font size for main heading */
   margin-bottom: 20px;
 }
 
@@ -96,11 +96,11 @@ section {
   /* text-align: center; */
   justify-content: center;
   text-align: justify;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 section h2 {
-  font-size: 30px; /* Larger font size for section headings */
+  font-size: 18px; /* Larger font size for section headings */
   margin-bottom: 20px;
   text-align: center;
 }
