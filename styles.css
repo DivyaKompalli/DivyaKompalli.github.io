@@ -1,19 +1,17 @@
-/* Global Styles */
-/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #f4fff8; /* Light background */
-  color: #1c3738; /* Dark text */
+  background: #f4fff8;
+  color: #1c3738;
   overflow-x: hidden;
-  font-size: 18px; /* Increased base font size */
+  font-size: 18px;
 }
 
 header {
-  background: #000f08; /* Dark header */
-  color: #f4fff8; /* Light text */
+  background: #000f08;
+  color: #f4fff8;
   padding: 20px;
   position: sticky;
   top: 0;
@@ -37,18 +35,18 @@ header ul {
 }
 
 header ul li {
-  margin: 0 20px; /* Slightly increased margin */
+  margin: 0 20px;
 }
 
 header ul li a {
   color: #f4fff8;
   text-decoration: none;
-  font-size: 18px; /* Larger font size for navigation links */
+  font-size: 18px;
   transition: color 0.3s;
 }
 
 header ul li a:hover {
-  color: #8baaad; /* Highlight color */
+  color: #8baaad;
 }
 
 /* Hero Section */
@@ -61,17 +59,17 @@ header ul li a:hover {
   height: 100vh;
   background: linear-gradient(to right, #1c3738, #4d4847);
   color: #f4fff8;
-  padding: 30px; /* Increased padding */
+  padding: 30px;
   position: relative;
 }
 
 #hero h1 {
-  font-size: 20px; /* Increased font size for main heading */
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
 #hero p {
-  font-size: 24px; /* Increased paragraph font size */
+  font-size: 24px;
   margin-bottom: 30px;
 }
 
@@ -82,7 +80,7 @@ header ul li a:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 22px; /* Increased button font size */
+  font-size: 22px;
   transition: background 0.3s;
 }
 
@@ -92,26 +90,25 @@ header ul li a:hover {
 
 /* About Section */
 section {
-  padding: 80px 20px; /* Increased section padding */
-  /* text-align: center; */
+  padding: 80px 20px;
   justify-content: center;
   text-align: center;
   font-size: 18px;
 }
 
 section h2 {
-  font-size: 18px; /* Larger font size for section headings */
+  font-size: 18px;
   margin-bottom: 20px;
   text-align: center;
 }
 
 /* Profile Picture */
 .profile-pic {
-  width: 400px; /* Increased size */
-  height: 450px; /* Increased size */
+  width: 400px;
+  height: 450px;
   border-radius: 50%;
   margin-bottom: 20px;
-  border: 4px solid #4d4847; /* Darker green border */
+  border: 4px solid #4d4847;
 }
 
 /* Projects */
@@ -145,7 +142,7 @@ section h2 {
   padding: 10px 20px;
   margin: 5px;
   border-radius: 5px;
-  font-size: 18px; /* Larger font size for skill tags */
+  font-size: 18px;
 }
 
 /* Footer */
@@ -157,8 +154,8 @@ footer {
 }
 /* Scrolling Text Effect */
 .text-container {
-  height: 60px; /* Container height equal to one text line height */
-  overflow: hidden; /* Hides text outside of the box */
+  height: 60px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -172,9 +169,9 @@ footer {
 }
 
 .scrolling-text p {
-  font-size: 24px; /* Larger font size for scrolling text */
+  font-size: 24px;
   margin: 0;
-  line-height: 2.2rem; /* Slightly larger line height */
+  line-height: 2.2rem;
 }
 
 /* Keyframes for scrolling text up */
