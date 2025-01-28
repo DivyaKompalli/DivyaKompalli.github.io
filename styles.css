@@ -95,7 +95,7 @@ section {
   padding: 80px 20px; /* Increased section padding */
   /* text-align: center; */
   justify-content: center;
-  text-align: justify;
+  text-align: center;
   font-size: 18px;
 }
 
