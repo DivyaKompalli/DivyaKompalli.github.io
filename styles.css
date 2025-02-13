@@ -19,23 +19,48 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
 header nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 header ul {
   display: flex;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-header ul li {
-  margin: 0 20px;
+@media screen and (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  header ul li {
+    margin: 10px 0;
+  }
 }
 
 header ul li a {
@@ -104,11 +129,10 @@ section h2 {
 
 /* Profile Picture */
 .profile-pic {
-  width: 400px;
-  height: 450px;
+  width: 80%;
+  max-width: 300px;
+  height: auto;
   border-radius: 50%;
-  margin-bottom: 20px;
-  border: 4px solid #4d4847;
 }
 
 /* Projects */
