@@ -120,15 +120,29 @@ section h2 {
   transition: transform 0.3s;
   text-align: center;
 }
-
+#projects h2 {
+  text-align: center;
+}
+/* #projects {
+  display: flex;
+  justify-content: center;
+} */
+#projects .project {
+  margin: 50px;
+  border: solid 5px #1c3738;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #1c3738;
+  color: #f4fff8;
+}
 #projects .project:hover {
   transform: translateY(-10px);
 }
 #project a {
-  color: #1c3738;
+  color: #f4fff8;
 }
 #project a:hover {
-  color: #1c3738;
+  color: #f4fff8;
 }
 .skills-container {
   display: flex;
@@ -204,4 +218,13 @@ footer {
   100% {
     opacity: 1;
   }
+}
+button {
+  border-radius: 5px;
+  background-color: #c6ae82;
+}
+button:hover {
+  background-color: #bca3ac;
+  border-radius: 25px;
+  color: black;
 }
