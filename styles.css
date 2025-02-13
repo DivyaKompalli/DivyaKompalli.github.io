@@ -40,26 +40,38 @@ header nav {
   align-items: center;
 }
 
-header ul {
+/* Ensure the navigation bar is horizontal */
+nav ul {
   display: flex;
+  justify-content: center; /* Centers the items */
+  align-items: center;
+  gap: 30px; /* Adds space between menu items */
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-@media screen and (max-width: 768px) {
-  header nav {
-    flex-direction: column;
-    text-align: center;
+/* Make sure list items are inline */
+nav ul li {
+  display: inline-block;
+}
+
+/* Ensure links are properly spaced */
+nav ul li a {
+  text-decoration: none;
+  color: white; /* Adjust as needed */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Responsive Design: Prevent breaking on smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap; /* Prevents items from breaking */
   }
 
-  header ul {
-    flex-direction: column;
-    padding-top: 10px;
-  }
-
-  header ul li {
-    margin: 10px 0;
+  nav ul li {
+    margin: 5px 10px; /* Adjust spacing */
   }
 }
 
