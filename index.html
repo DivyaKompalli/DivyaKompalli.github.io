@@ -3,168 +3,212 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Kompalli Sri Divya Muktha - Full-Stack Developer</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script>
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-links a");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").includes(current)) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <nav>
-        <h1>My Portfolio</h1>
-        <ul>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <h1 class="logo">Sri Divya Muktha</h1>
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <!-- Hero Section -->
     <section id="hero">
-      <div class="hero-content">
-        <img
-          src="prof.jpg"
-          alt="Profile Picture"
-          class="profile-pic"
-          style="max-width: 100%; height: auto"
-        />
-        <div class="text-container">
-          <div class="scrolling-text">
-            <p class="fade">Welcome to My Portfolio</p>
-            <p class="fade">
-              Hi, I’m Kompalli Sri Divya Muktha, a Passionate Developer!
-            </p>
-            <p class="fade">Let’s build something amazing together!</p>
-          </div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hello, I'm Kompalli Sri Divya Muktha</h1>
+          <p>
+            A Full-Stack Developer passionate about building scalable and
+            user-friendly web applications.
+          </p>
+          <a href="#projects" class="btn">View My Work</a>
         </div>
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Kompalli Sri Divya Muktha is a third-year Information Technology student
-        at Gokaraju Rangaraju Institute of Engineering and Technology (GRIET).
-        She is passionate about full-stack development, with hands-on experience
-        in both front-end and back-end technologies, including HTML, CSS,
-        JavaScript, and database management, alongside strong proficiency in
-        Java, Python, and C. Her expertise spans across creating dynamic web
-        applications, developing user-friendly interfaces, and working with
-        server-side frameworks. Sri Divya has also completed internships in AI
-        and IoT, sharpening her skills in cloud computing and machine learning.
-        Actively engaged in competitive programming, she continuously hones her
-        problem-solving and algorithmic skills on platforms such as CodeChef,
-        Codeforces, and LeetCode.
-      </p>
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <p>
+            Hi, I'm Kompalli Sri Divya Muktha, a third year studend passionate
+            about building web applications. I specialize in front-end
+            technologies like
+            <strong>React</strong> and <strong>Angular</strong>, as well as
+            back-end frameworks like <strong>Node.js</strong> and
+            <strong>Django</strong>. I love solving complex problems and
+            creating seamless user experiences.
+          </p>
+        </div>
+      </div>
     </section>
-
-    <!-- Projects Section -->
-    <div id="projects">
-      <h2 style="font-size: 50px">My Projects</h2>
-      <div class="project">
-        <img
-          src="online.png"
-          alt="Project 1"
-          style="max-width: 100%; height: auto"
-        />
-        <a
-          href="https://DivyaKompalli.github.io/Online-Store/"
-          style="color: #f4fff8; text-decoration: none"
-          width="100px"
-          height="100px"
-          ><h3>Project 1</h3></a
-        >
-        <p>
-          The Online Store project is a dynamic web application designed to
-          provide users with a seamless e-commerce experience. It features a
-          user-friendly interface for browsing and purchasing products, with
-          secure payment integration and personalized recommendations. The
-          back-end is powered by a robust database system, ensuring smooth order
-          management and inventory tracking. This project leverages full-stack
-          development, combining front-end technologies like HTML, CSS, and
-          JavaScript with back-end functionalities built using server-side
-          frameworks and databases.
-        </p>
-      </div>
-      <div class="project">
-        <img
-          src="mystore.png"
-          style="max-width: 100%; height: auto"
-          alt="Project 2"
-        />
-        <a
-          href="https://divyakompalli.github.io/mystore/"
-          style="color: #f4fff8; text-decoration: none"
-          ><h3>Project 2</h3></a
-        >
-        <p>
-          Our online store offers a seamless shopping experience with a wide
-          range of high-quality products at competitive prices. Enjoy fast
-          shipping, secure payments, and excellent customer service—all from the
-          comfort of your home!
-        </p>
-      </div>
-      <!-- <div class="project">
-        <img
-          src="ecom.png"
-          style="max-width: 100%; height: auto"
-          alt="Project 3"
-        />
-        <a
-          href="https://assignment-shellovation.vercel.app/"
-          style="color: #f4fff8; text-decoration: none"
-          ><h3>Project 3</h3></a
-        >
-        <p>
-          A clothing eCommerce website offers a seamless online shopping
-          experience, featuring a wide range of apparel for men, women, and
-          children. Customers can browse, select, and purchase trendy outfits
-          with secure payment options and fast delivery services.
-        </p>
-      </div> -->
-    </div>
 
     <!-- Skills Section -->
     <section id="skills">
-      <h2>My Skills</h2>
-      <div class="skills-container">
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">React</span>
-        <span class="skill">Java</span>
-        <span class="skill">Python</span>
-        <span class="skill">AWS</span>
-        <span class="skill">SQL</span>
-        <span class="skill">Node</span>
-        <span class="skill">MongoDb</span>
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>Front-End</h3>
+            <p>HTML, CSS, JavaScript, React, Angular</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-server"></i>
+            <h3>Back-End</h3>
+            <p>Node.js, Express, Django, REST APIs</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>Databases</h3>
+            <p>MySQL, MongoDB, PostgreSQL</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-tools"></i>
+            <h3>Tools</h3>
+            <p>Git, Docker, AWS, Figma</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="E-Commerce Website"
+            />
+            <h3>E-Commerce Website</h3>
+            <p>
+              A fully functional e-commerce platform built with React and
+              Node.js.
+            </p>
+            <a href="https://divyakompalli.github.io/Online-Store/" class="btn"
+              >View Project</a
+            >
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="E-Commerce Website"
+            />
+            <h3>E-Commerce Website</h3>
+            <p>
+              A fully functional e-commerce platform built with React and
+              Node.js.
+            </p>
+            <a href="https://divyakompalli.github.io/mystore/" class="btn"
+              >View Project</a
+            >
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <img src="https://via.placeholder.com/300" alt="Bank Website" />
+            <h3>Bank Website</h3>
+            <p>
+              A fully functional banking platform built with JavaScript and
+              HTML.
+            </p>
+            <a href="https://divyakompalli.github.io/bank/" class="btn"
+              >View Project</a
+            >
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Task Management App"
+            />
+            <h3>Task Management App</h3>
+            <p>A task management application using Angular and Firebase.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Portfolio Website"
+            />
+            <h3>Portfolio Website</h3>
+            <p>This portfolio website built with HTML and CSS.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-      <h2>Contact Me</h2>
-      <p>
-        Email:
-        <a href="mailto:sridivyakompalli@gmail.com"
-          >sridivyakompalli@gmal.com.com</a
-        >
-      </p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/sridivyamukthakompalli1229"
-          >View My Profile</a
-        >
-      </p>
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>
+          Let's build something amazing together! Reach out to me via email or
+          connect with me on social media.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:john.doe@example.com" class="btn"
+            ><i class="fas fa-envelope"></i> Email Me</a
+          >
+          <a href="https://linkedin.com/in/johndoe" target="_blank" class="btn"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+          <a href="https://github.com/johndoe" target="_blank" class="btn"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <p>© 2025 Sri Divya Muktha. All rights reserved.</p>
+      <div class="container">
+        <p>&copy; 2023 John Doe. All rights reserved.</p>
+      </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
